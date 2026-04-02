@@ -11,7 +11,7 @@ export default function SelectionPopup({ onClose, onSelectLocation }) {
   // 📍 Fetch current location
   const handleGetLocation = () => {
     if (!navigator.geolocation) {
-      alert("Geolocation not supported");
+      alert("Geolocation is not supported by your browser.");
       return;
     }
 
@@ -34,8 +34,24 @@ export default function SelectionPopup({ onClose, onSelectLocation }) {
         }
       },
       (error) => {
-        alert("Unable to fetch location");
+        // Friendly fallback
         console.log(error);
+
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            alert("Location permission denied. Please allow location access in your browser.");
+            break;
+          case error.POSITION_UNAVAILABLE:
+            alert("Location unavailable. Try again later.");
+            break;
+          case error.TIMEOUT:
+            alert("Location request timed out. Try again.");
+            break;
+          default:
+            alert("Unable to fetch location. Make sure you are using HTTPS.");
+        }
+
+        setAddress("Unable to fetch location");
       }
     );
   };
