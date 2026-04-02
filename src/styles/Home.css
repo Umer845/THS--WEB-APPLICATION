@@ -1,0 +1,107 @@
+/* MAIN */
+.ths-home {
+    font-family: "THS Sans", sans-serif;
+    background: #fff;
+}
+
+/* HERO */
+.ths-home-hero-content {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-image {
+    max-width: 100%;
+}
+
+.ths-home-hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.ths-home-hero-btn {
+    background: white;
+    color: #ff7a18;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* CATEGORIES */
+.ths-home-categories {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    padding: 20px 45px 20px 350px;
+    background-color: #750B02;
+    margin-top: -7px;
+}
+
+.ths-home-cat {
+    color: var(--Neutral-100, #FFF);
+    text-align: center;
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+.ths-home-cat.active {
+    color: var(--Secondary-500, #FFA32B);
+    text-align: center;
+    font-family: "Flame";
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    border-bottom: 1px solid #FFA32B;
+    ;
+}
+
+/* MENU */
+.ths-home-menu {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    background: var(--Primary-100, #FFEBE9);
+}
+
+/* CARD */
+.ths-home-card {
+    width: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ths-home-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.ths-home-card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.ths-home-card-body h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* BUTTON */
+.ths-home-add-btn {
+    background: #ff7a18;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}

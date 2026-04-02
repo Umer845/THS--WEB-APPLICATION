@@ -1,0 +1,118 @@
+.ths-menu {
+    display: block;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    background-color: var(--secondary);
+    margin-bottom: 139px;
+}
+
+.ths-menu h3 {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 51px;
+    margin-bottom: 20px;
+}
+
+.ths-submenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    width: 435px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    gap: 16px;
+}
+
+/* Image */
+.card-img img {
+    width: 177px;
+    height: 148px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Content */
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.card-content p {
+    color: var(--Neutral-600, #8C817D);
+    font-family: "Flame";
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 181px;
+}
+
+/* Price Badge */
+.price {
+    display: inline-flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 999px;
+    background: var(--Primary-800, #750B02);
+    color: var(--Neutral-100, #FFF);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+/* Actions */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.card-actions button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Secondary-500, #FFA32B);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    background-color: transparent;
+    border: none;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.heart {
+    color: #f5b5b5;
+    cursor: pointer;
+}

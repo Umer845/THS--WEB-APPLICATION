@@ -1,0 +1,425 @@
+.checkout-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.checkout-container {
+    width: 1296px;
+    height: 689px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.checkout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px 13px 24px;
+    border-radius: 8px 8px 0 0;
+    background: var(--Primary-100, #FFEBE9);
+}
+
+.checkout-header h2 {
+    color: var(--Neutral-600, #8C817D);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.checkout-header span {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.checkout-close {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--Primary-900, #450500);
+}
+
+.checkout-body {
+    display: flex;
+    gap: 20px;
+    padding: 16px 24px;
+}
+
+.checkout-left {
+    flex: 2;
+}
+
+
+.checkout-row {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    gap: 8px;
+}
+
+.phone-input span {
+    display: flex;
+    height: 48px;
+    padding: 0 16px;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--Neutral-400, #D6D0CD);
+    color: var(--Primary-800, #750B02);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 21px;
+    margin-top: 9px;
+    gap: 4px;
+}
+
+.phone-input input {
+    display: flex;
+    height: 48px;
+    padding: 0 16px;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--Neutral-400, #D6D0CD);
+    color: var(--Neutral-500, #B3AAA6);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    margin-top: 9px;
+    outline: none;
+}
+
+.address-box {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--Neutral-400, #D6D0CD);
+    color: var(--Primary-800, #750B02);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 21px;
+    margin-top: 9px;
+}
+
+.address-box input {
+    padding: 0px 16px;
+    background: transparent;
+    margin-top: 0px !important;
+    color: var(--Neutral-500, #B3AAA6);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    border: none !important;
+    outline: none;
+}
+
+.change-link {
+    padding: 10px;
+    font-family: "Flame";
+    color: var(--Secondary-300, #FFC77A);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.full {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.field label {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.field textarea {
+    display: flex;
+    height: 110px !important;
+    padding: 12px 16px !important;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--Neutral-400, #D6D0CD);
+    color: var(--Neutral-500, #B3AAA6);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    outline: none;
+    background-color: transparent;
+    margin-top: 9px;
+}
+
+.field input,
+.field textarea,
+.field select {
+    display: flex;
+    height: 48px;
+    padding: 0 16px;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--Neutral-400, #D6D0CD);
+    color: var(--Neutral-500, #B3AAA6);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    margin-top: 9px;
+    background-color: transparent;
+    outline: none;
+}
+
+
+.checkout-right {
+    width: 389.344px;
+    height: 588px;
+    padding: 24px 24px 0 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 4px;
+    background: #F9FAFB;
+}
+
+.checkout-right h3 {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+}
+
+.food-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.food-info {
+    flex: 1;
+}
+
+.food-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-top h3 {
+    margin: 0;
+    color: var(--Primary-800, #750B02);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.food-info p {
+    margin: 4px 0;
+    color: var(--Neutral-600, #8C817D);
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 278px;
+    flex-shrink: 0;
+}
+
+.food-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.food-qty {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-400, #D6D0CD);
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--Primary-800, #750B02);
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+    text-align: center;
+    padding: 2px;
+}
+
+.food-price {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.checkout-add {
+    color: var(--Secondary-500, #FFA32B);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.promo {
+    display: flex;
+    height: 100px;
+    padding-bottom: 1px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-bottom: 1px solid var(--Neutral-400, #D6D0CD);
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.promo label {
+    color: var(--Primary-800, #750B02);
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+    font-family: "Flame";
+}
+
+.promo input {
+    height: 40px;
+    padding: 0 12px;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 999px;
+    border: 1px solid var(--Neutral-400, #D6D0CD);
+    width: 100%;
+    margin-top: 12px;
+    background-color: transparent;
+}
+
+.checkout-summary {
+    margin-top: 16px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle h2 {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+}
+
+.subtitle span {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+}
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.checkout-total h2 {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.checkout-total span {
+    color: var(--Primary-800, #750B02);
+    font-family: "Flame";
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.checkout-order-btn {
+    display: flex;
+    width: 342px;
+    padding: 12px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33554400px;
+    background: var(--Secondary-300, #FFC77A);
+    color: #FFF;
+    text-align: center;
+    font-family: "Flame";
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+}

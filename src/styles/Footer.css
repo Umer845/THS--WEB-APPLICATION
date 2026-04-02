@@ -1,0 +1,227 @@
+.footer {
+    background: var(--Primary-900, #450500);
+    color: #fff;
+    padding: 60px 189px 20px 369px;
+    font-family: "Flame";
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* LEFT */
+.footer-left {
+    max-width: 350px;
+}
+
+.logo {
+    width: 109px;
+    height: 121.111px;
+    aspect-ratio: 9/10;
+}
+
+.footer-left h2 {
+    color: var(--Secondary-500, #FFA32B);
+    font-family: "Bestime";
+    font-size: 33.488px;
+    font-style: normal;
+    line-height: 44.651px;
+    margin-top: 10px;
+}
+
+.footer-left span {
+    color: var(--Primary-600, #DB1C0B);
+    font-family: "Bestime";
+    font-size: 33.488px;
+    font-style: normal;
+    line-height: 44.651px;
+}
+
+.desc-title {
+    color: var(--Primary-100, #FFEBE9);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    width: 411px;
+    height: 84px;
+}
+
+.socials {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.socials img {
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1/1;
+}
+
+/* CENTER */
+.footer-center {
+    margin-top: 120px;
+}
+
+.footer-center h3 {
+    color: var(--Primary-100, #FFEBE9);
+    font-family: "Flame";
+    font-size: 20px;
+    font-style: normal;
+    line-height: 28px;
+}
+
+.footer-center p {
+    color: var(--Primary-100, #FFEBE9);
+    font-family: "Flame";
+    font-size: 13px;
+    font-style: normal;
+    line-height: 19.5px;
+    margin-top: 3px;
+}
+
+.support {
+    margin-top: 17px;
+}
+
+.support p {
+    color: var(--Primary-100, #FFEBE9);
+    font-family: "Flame";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.store-buttons img {
+    width: 134.995px;
+    height: 39.999px;
+    cursor: pointer;
+}
+
+/* RIGHT */
+
+.footer-right {
+    margin-top: 110px;
+}
+
+.footer-right .map {
+    display: flex;
+    width: 302px;
+    height: 134px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.payments {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.payments img {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1/1;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    padding-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a {
+    color: var(--Primary-100, #FFEBE9);
+    font-family: "Flame";
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.footer-bottom p {
+    color: var(--Primary-100, #FFEBE9);
+    font-family: "Flame";
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    display: flex;
+    align-items: center;
+}
+
+.powered {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.powered p {
+    color: var(--Primary-100, #FFEBE9);
+    font-family: "Flame";
+    font-size: 10px;
+    font-style: normal;
+    line-height: 10px;
+}
+
+/* SCROLL BUTTON */
+.scroll-top {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 0 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33554400px;
+    background: var(--Secondary-500, #FFA32B);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+    border: none;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.scroll-top img {
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
